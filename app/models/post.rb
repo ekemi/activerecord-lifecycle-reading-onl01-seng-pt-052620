@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Post < ActiveRecord::Base
 
@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
   end
 
   def make_title_case
-    binding.pry
+  
     self.title = self.title.titlecase
   end
 end
